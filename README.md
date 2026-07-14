@@ -28,7 +28,8 @@ CSS/Styled Components: لتصميم واجهة مستخدم متجاوبة مع 
   ├── /assets        # الصور والملفات الثابتة
   └── App.js         # نقطة الدخول الرئيسية وتوزيع الروابط
 
-رابط الموقع
+رابط الموقع 
+https://khalid205.github.io/E-Commerce-Project/
 
 كيفية التشغيل محلياً
 git clone https://github.com/khalid205/E-Commerce-Project.git
