@@ -1,75 +1,36 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-Commerce Project
+هذا المشروع عبارة عن متجر إلكتروني متكامل تم بناؤه باستخدام تقنيات الويب الحديثة، يهدف إلى توفير تجربة تسوق سهلة وسريعة للمستخدمين مع إدارة فعالة للمنتجات وعربة التسوق.
 
-Currently, two official plugins are available:
+فكرة المشروع:
+المشروع هو منصة تجارة إلكترونية تتيح للمستخدمين تصفح المنتجات، عرض تفاصيل كل منتج، إضافة المنتجات إلى عربة التسوق، وإتمام عملية الشراء (Checkout). يتميز الموقع بواجهة مستخدم سلسة وتجربة مستخدم ديناميكية.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+التقنيات المستخدمة
+تم استخدام حزمة من التقنيات القوية لضمان الأداء العالي:
 
-## React Compiler
+React.js: لبناء واجهات مستخدم تفاعلية وسريعة.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React Router (HashRouter): لإدارة التنقل بين الصفحات داخل التطبيق بشكل فعال.
 
-## Expanding the ESLint configuration
+Context API: لإدارة حالة عربة التسوق (Cart State) وتوفير البيانات عبر مكونات التطبيق.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+React Toastify: لعرض تنبيهات جذابة للمستخدم عند إضافة المنتجات أو إتمام العمليات.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+CSS/Styled Components: لتصميم واجهة مستخدم متجاوبة مع جميع الشاشات.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+هيكل المشروع
+/src
+  ├── /components    # المكونات الأساسية (Navbar, Buttons, etc.)
+  ├── /context       # إدارة حالة البيانات (CartContext)
+  ├── /pages         # الصفحات (Home, Cart, Checkout, ProductDetails)
+  ├── /assets        # الصور والملفات الثابتة
+  └── App.js         # نقطة الدخول الرئيسية وتوزيع الروابط
 
-```
+رابط الموقع
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+كيفية التشغيل محلياً
+git clone https://github.com/khalid205/E-Commerce-Project.git
+npm install
+npm run dev
