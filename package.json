@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/khalid205/E-Commerce-Project.git",
+  "homepage": "https://khalid205.github.io/E-Commerce-Project",
+
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
