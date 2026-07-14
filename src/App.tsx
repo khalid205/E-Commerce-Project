@@ -7,6 +7,7 @@ import { Cart } from './pages/Cart';
 import { Checkout } from './pages/Checkout';
 import { ProductDetails } from './pages/ProductDetails';
 
+
 function App() {
   return (
     <CartProvider>
@@ -14,7 +15,7 @@ function App() {
         <Navbar />
         <ToastContainer position="bottom-right" />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/product/:id" element={<ProductDetails />} />
