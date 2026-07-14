@@ -1,0 +1,133 @@
+/* src/index.css */
+body { background-color: #f8f9fa; }
+.card { 
+  border: none !important; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+.card:hover { 
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+}
+.navbar { box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+.hover-card {
+  transition: all 0.3s ease;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* تنسيق إضافي للأيقونات والبطاقات */
+.btn-dark { transition: 0.3s; }
+.btn-dark:hover { background-color: #333; transform: translateY(-2px); }
+.card { transition: 0.3s; }
+.card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
+
+
+
+/* تحسينات التصميم الاحترافي */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 20px !important;
+  transition: all 0.3s ease;
+}
+
+.product-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-item:hover {
+  transform: translateX(-5px);
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.1) !important;
+}
+
+.btn-main-green {
+  background-color: #2e7d32 !important;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+.btn-main-green:hover {
+  background-color: #1b5e20 !important;
+  transform: scale(1.02);
+}
+
+/* تطبيق الخط على كامل المشروع */
+body, h1, h2, h3, h4, h5, h6, .btn, .navbar-brand, .form-control {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+/* إضافات لتحسين شكل الخط وجعله أكثر وضوحاً */
+body {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+/* تأثير ظهور تدريجي للنصوص */
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* src/index.css */
+
+/* تعريف اللون الأخضر الرئيسي */
+:root {
+  --main-green: #2e7d32;
+  --bg-gradient: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+}
+
+/* تطبيق خلفية متدرجة لكامل الصفحة */
+body {
+  background: var(--bg-gradient) !important;
+  min-height: 100vh;
+}
+
+/* تنسيق العنوان */
+.text-main-green {
+  color: var(--main-green) !important;
+}
+
+/* تنسيق كروت المنتجات (تأثير الـ Hover) */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* تنسيق أزرار الإضافة للسلة */
+.btn-main-green {
+  background-color: var(--main-green) !important;
+  color: white !important;
+}
+
+.btn-main-green:hover {
+  opacity: 0.9;
+}
+
+/* تنسيق شارات التخفيض */
+.badge-sale {
+  background-color: #e74c3c;
+  color: white;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
