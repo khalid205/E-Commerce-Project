@@ -35,3 +35,6 @@ https://khalid205.github.io/E-Commerce-Project/
 git clone https://github.com/khalid205/E-Commerce-Project.git
 npm install
 npm run dev
+
+رابط الموقع
+https://khalid205.github.io/E-Commerce-Project/
